@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: # the website title (if blank, full name will be used instead)
+title: blank # the website title (if blank, full name will be used instead)
 first_name: Ashish
 middle_name: R.
 last_name: Nandagawali
@@ -87,7 +87,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: Blogs of Ashish Nandagawali # blog_name will be displayed in your blog page
-blog_description: Just an way to share the knowledge and learn from fellow coders, acamdeicans and Industry consultant 
+blog_description: Just a way to share the knowledge and learn from fellow coders, academicians and Industry consultant
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
