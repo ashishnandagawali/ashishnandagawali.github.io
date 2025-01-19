@@ -21,6 +21,7 @@ I’m an IT professional with 21+ years of industry experience across different 
 I have played various roles including sales & solution lead, program manager, delivery head of account managing 20+ USD Million revenue & margin. 
 
 Lately I developed very keen interest in AI (or you can say bitten by AI bug) and have been actively learning with various medium including AWS, Microsoft and Google certifications, IIT-Kharagpur certification course, AI summits hosted by nvidia, Salesforce. 
+
 These learning along with various reading from Gartner, industry analysis papers from Big Four, gave me insights on the not only in the technical aspects of AI (& continuous improvisation in field of AI) but also real time business relevant implementation of AI, Gen-AI/ LLM, Machine Learning and off course, and Data science. I am part of Pune AI Chapter within organization who help in providing solutions, helping crating PoC/MVP create awareness on AI and latest trends in AI/Gen-AI
 
 
