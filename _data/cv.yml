@@ -2,18 +2,18 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Ashish Nandagawali
     - name: Date of Birth
-      value: 14th March 1879
+      value: Feb 1981
     - name: Languages
-      value: English, German
+      value: English, Hindia, Marathi, Telugu, Tamil, Malayalam
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: B. Tech
+      institution: NIT Calicut
+      year: 2002
       description:
         - Description 1.
         - Description 2.
@@ -64,7 +64,7 @@
 - title: Open Source Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
+    - title: <a href="https://github.com/ashishnandagawali">Github Repos</a>
       year: 2015-now
       description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
 
@@ -82,16 +82,21 @@
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: AI
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Agnetic AI
+        - CrewAI
+        - LangChain & Langgraph
+    - title: Machine Learning
       items:
-        - Description 1.
-        - Description 2.
+        - Transformers Architecture
+        - Self-attention Mechanism 
+    - title: Data Science
+      items:
+        - Data Lake, 
+        - Predictive Analytics
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - <u>Hobbies:</u> Movies, Travelling, Books 
