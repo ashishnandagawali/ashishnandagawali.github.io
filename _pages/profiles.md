@@ -1,8 +1,8 @@
 ---
 layout: profiles
 permalink: /people/
-title: people
-description: members of the lab or group
+title: Certifications
+description: Certifications done
 nav: true
 nav_order: 7
 
@@ -12,17 +12,9 @@ profiles:
   - align: right
     image: prof_pic.jpg
     content: about_einstein.md
-    image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
+    image_circular: true # crops the image to make it circular
   - align: left
     image: prof_pic.jpg
     content: about_einstein.md
-    image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
+    image_circular: true # crops the image to make it circular
 ---
