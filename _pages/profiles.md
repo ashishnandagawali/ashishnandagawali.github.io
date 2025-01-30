@@ -2,7 +2,7 @@
 layout: profiles
 permalink: /people/
 title: Certifications
-description: Certifications done
+description: Certifications 
 nav: true
 nav_order: 2
 
