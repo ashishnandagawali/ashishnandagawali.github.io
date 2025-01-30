@@ -14,7 +14,7 @@ profiles:
     content: aws_mls.md
     image_circular: true # crops the image to make it circular
   - align: left
-    image: ai_100.jpg
-    content: ai_100.md
+    image: gcp_mle.png
+    content: gcp_mle.md
     image_circular: true # crops the image to make it circular
 ---
