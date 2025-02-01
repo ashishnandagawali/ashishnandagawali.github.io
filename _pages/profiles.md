@@ -22,7 +22,7 @@ profiles:
     content: dp_100.md
     image_circular: true # crops the image to make it circular
   - align: left
-    image: ai-102.jpeg
-    content: ai-102.md
+    image: ai_102.png
+    content: ai_102.md
     image_circular: true # crops the image to make it circular
 ---
