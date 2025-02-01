@@ -21,7 +21,7 @@ ninja.data = [{
           description: "Various Certifications acquired during my learning journey",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/people/";
+            window.location.href = "/certifications/";
           },
         },{id: "nav-projects",
           title: "Projects",
