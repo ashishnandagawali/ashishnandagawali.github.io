@@ -2,7 +2,7 @@
 layout: profiles
 permalink: /people/
 title: Certifications
-description: Certifications 
+description: Various Certifications I have done during my learning journey 
 nav: true
 nav_order: 2
 
