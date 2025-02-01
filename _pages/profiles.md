@@ -1,6 +1,6 @@
 ---
 layout: profiles
-permalink: /people/
+permalink: /certifications/
 title: Certifications
 description: Various Certifications acquired during my learning journey 
 nav: true
