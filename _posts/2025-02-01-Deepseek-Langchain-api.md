@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Deepseek API Usage with Langchain
-date: 2025-02-02 20:00:00
+date: 2025-02-01 20:00:00
 description: This blog post describes way to connect Deepseep API using Langchain as per documentation provided by Deepseep
 tags: Deepseek, API, Langchain
 categories: Code
@@ -33,15 +33,16 @@ llm = BaseChatOpenAI(
 )
 ~~~
 
- 4. lets give an trial to check whether the api is working fine. Hence sending a trivial message.
+ 4. lets give an sample prompt message to check whether the api is working fine. 
 ~~~python
 response = llm.invoke("Hi!")
 print(response.content)
-
-Hello! How can I assist you today? 
-
 ~~~
- 5. lets givea good serious message and see the output to ensure that API is working Fine
+
+~~~python
+Hello! How can I assist you today? 
+~~~
+ 5. lets givea proper message and see the output to ensure that API is responding as expected 
 
 ~~~python
 messages = [
@@ -83,3 +84,5 @@ chain.invoke(
  ***
  AIMessage(content='Ich liebe agentische KI.', additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 7, 'prompt_tokens': 20, 'total_tokens': 27, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}, 'prompt_cache_hit_tokens': 0, 'prompt_cache_miss_tokens': 20}, 'model_name': 'deepseek-chat', 'system_fingerprint': 'fp_3a5770e1b4', 'finish_reason': 'stop', 'logprobs': None}, id='run-46ca6f2a-21ef-45f4-83f6-814c07fab391-0', usage_metadata={'input_tokens': 20, 'output_tokens': 7, 'total_tokens': 27, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}})
  ***
+
+  6. You can find my [google colab file](https://github.com/ashishnandagawali/agentic-ai/blob/0096abadca77518e8af77fa36df0cc15a64d929e/Langchain_deepseek.ipynb) in my github repo -
