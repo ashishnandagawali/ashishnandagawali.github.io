@@ -10,12 +10,11 @@ featured: false
 Deepseek API Usage with Langchain
 ============
 
-In this article we'll see how we can use the deepseek api from Lanchain framework as per documentation provided by Deepseek
-
+In this article we'll see how we can use the deepseek api from Lanchain framework as per documentation provided by Deepseek.
 
 1. Install following library
     ~~~python
-        !pip3 install langchain_openai
+        '!pip3 install langchain_openai'
     ~~~
 2. Import BaseChatOpenAI class from the Langchain chat models 
     ~~~python
@@ -79,8 +78,8 @@ In this article we'll see how we can use the deepseek api from Lanchain framewor
         )
     ~~~
 7. Observe the output, esepcailly the KV Cache or content caching portion.
-    ***
-    AIMessage(content='Ich liebe agentische KI.', additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 7, 'prompt_tokens': 20, 'total_tokens': 27, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}, 'prompt_cache_hit_tokens': 0, 'prompt_cache_miss_tokens': 20}, 'model_name': 'deepseek-chat', 'system_fingerprint': 'fp_3a5770e1b4', 'finish_reason': 'stop', 'logprobs': None}, id='run-46ca6f2a-21ef-45f4-83f6-814c07fab391-0', usage_metadata={'input_tokens': 20, 'output_tokens': 7, 'total_tokens': 27, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}})
-    ***
+    ~~~python
+        AIMessage(content='Ich liebe agentische KI.', additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 7, 'prompt_tokens': 20, 'total_tokens': 27, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}, 'prompt_cache_hit_tokens': 0, 'prompt_cache_miss_tokens': 20}, 'model_name': 'deepseek-chat', 'system_fingerprint': 'fp_3a5770e1b4', 'finish_reason': 'stop', 'logprobs': None}, id='run-46ca6f2a-21ef-45f4-83f6-814c07fab391-0', usage_metadata={'input_tokens': 20, 'output_tokens': 7, 'total_tokens': 27, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}})
+    ~~~
 
-8. You can find working [google colab file](https://github.com/ashishnandagawali/agentic-ai/blob/0096abadca77518e8af77fa36df0cc15a64d929e/Langchain_deepseek.ipynb) in my github repo -
+8. You can find working [google colab file](https://github.com/ashishnandagawali/agentic-ai/blob/0096abadca77518e8af77fa36df0cc15a64d929e/Langchain_deepseek.ipynb) in my github repo.
