@@ -34,7 +34,7 @@ ninja.data = [{
       
         title: "Deepseek API Usage with Langchain",
       
-      description: "This blog post describes way to connect Deepseep API using Langchain as per documentation provided by Deepseep",
+      description: "This blog post describes way to connect Deepseep API using Langchain",
       section: "Posts",
       handler: () => {
         
