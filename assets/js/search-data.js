@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/repositories/";
           },
-        },{id: "post-a-post-with-image-galleries",
+        },{id: "post-deepseek-api-usage-with-langchain",
+      
+        title: "Deepseek API Usage with Langchain",
+      
+      description: "This blog post describes way to connect Deepseep API using Langchain as per documentation provided by Deepseep",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/Deepseek-Langchain-api/";
+        
+      },
+    },{id: "post-a-post-with-image-galleries",
       
         title: "a post with image galleries",
       
