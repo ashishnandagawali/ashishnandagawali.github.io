@@ -2,7 +2,7 @@
 layout: post
 title: Deepseek API Usage with Langchain
 date: 2025-02-01 20:00:00
-description: This blog post describes way to connect Deepseep API using Langchain as per documentation provided by Deepseep
+description: This blog post describes way to connect Deepseep API using Langchain
 tags: Deepseek, API, Langchain
 categories: Code
 featured: true
@@ -10,7 +10,7 @@ featured: true
 Deepseek API Usage with Langchain
 ============
 
-In this article we'll see how we can use the deepseek api from Lanchain framework
+In this article we'll see how we can use the deepseek api from Lanchain framework as per documentation provided by Deepseek
 
 
 1. Install following library
