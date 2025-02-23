@@ -9,73 +9,119 @@ featured: false
 ---
 In this article CrewAI Installation Using Anaconda.
 
-1. Install anaconda from https://www.anaconda.com/download.
-2. Start powershell from anaconda folder 
-    <div class="row mt-3">
-        <div class="col-sm mt-3 mt-md-0">
-            {% include figure.liquid loading="eager" path="assets/img/crewai-setup/Start-Menu-Ananconda-Powershell.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-        </div>
+1. Install anaconda from [Anaconda Download](https://www.anaconda.com/download).
+2. Start powershell from anaconda folder ( similar to below)
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/crewai-setup/Start-Menu-Ananconda-Powershell.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
-3. Now create an BaseChatOpenAI object which will be used across our page.
+</div>
 
+3. We'll create a new conda environment for crewai. Not a necessary steps but for a safety of not impacting our existing ongoing conda envionment or python development work due to any any dependencies packages or libraries  installation.
+
+4. Give following command to create new environment called "crewai-handson". In case you are looking for specific version of python you can mention same. 
     ~~~python
-        llm = BaseChatOpenAI(
-            model='deepseek-chat', 
-            openai_api_key='<Your API Key>'
-            openai_api_base='https://api.deepseek.com',
-            max_tokens=1024
-        )
-    ~~~
-4. lets give an sample prompt message to check whether the api is working fine. 
-    ~~~python
-        response = llm.invoke("Hi!")
-        print(response.content)
+        conda create -n crewai-handson
     ~~~
 
     ~~~python
-        Hello! How can I assist you today? 
+        conda create -n crewai-handson   python=3.11.9 
     ~~~
-5. lets givea proper message and see the output to ensure that API is responding as expected 
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/crewai-setup/conda-crewai-env.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+
+5. Now activate this new environment using command 
 
     ~~~python
-        messages = [
-            (
-                "system",
-                "You are a helpful assistant that translates English to Persian. Translate the user sentence.",
-            ),
-            ("human", "I love programming."),
-        ]
-        ai_msg = llm.invoke(messages)
-        ai_msg.content
+        conda activate crewai-handson
+    ~~~
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/crewai-setup/conda-crewai-env-activate.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+
+6. I am using the cursor ide for development of the my crewai projects. Cursor ai ( build on VS code) have it own terminal where you can activate your conda environment are use the anaconda shell in separate window. Your choice of convenience.
+
+7. If your cursor or windows command is not able to recognise conda command then add conda location to your environment variable in path.
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/crewai-setup/env-variable.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+
+8. Either in powershell/command prompt/"cursor terminal", execute command ( If not done sucessfully as Step#5) 
+
+    ~~~python
+        conda activate crewai-handson
     ~~~
 
-6. Check with complete message given to system
-    ~~~python
-    
-        from langchain_core.prompts import ChatPromptTemplate
-        
-        prompt = ChatPromptTemplate(
-            [
-                (
-                    "system",
-                    "You are a helpful assistant that translates {input_language} to {output_language}.",
-                ),
-                ("human", "{input}"),
-            ]
-        )
-        
-        chain = prompt | llm
-        chain.invoke(
-            {
-                "input_language": "English",
-                "output_language": "German",
-                "input": "I love agentic AI.",
-            }
-        )
-    ~~~
-7. Observe the output, esepcailly the KV Cache or content caching portion.
-    ~~~python
-        AIMessage(content='Ich liebe agentische KI.', additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 7, 'prompt_tokens': 20, 'total_tokens': 27, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}, 'prompt_cache_hit_tokens': 0, 'prompt_cache_miss_tokens': 20}, 'model_name': 'deepseek-chat', 'system_fingerprint': 'fp_3a5770e1b4', 'finish_reason': 'stop', 'logprobs': None}, id='run-46ca6f2a-21ef-45f4-83f6-814c07fab391-0', usage_metadata={'input_tokens': 20, 'output_tokens': 7, 'total_tokens': 27, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}})
-    ~~~
+    Cursor Terminal
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/crewai-setup/conda-crewai-env-activate-cursor-term.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+  
+    Windows Powershell Command Prompt
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/crewai-setup/conda-crewai-env-activate-powershell.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+    Anaconda Powershell Command Prompt
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/crewai-setup/conda-crewai-env-activate-anaconda-powershell.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
 
-8. You can find working [google colab file](https://github.com/ashishnandagawali/agentic-ai/blob/0096abadca77518e8af77fa36df0cc15a64d929e/Langchain_deepseek.ipynb) in my github repo.
+9. Now let's install packages required for crewai using pip ( if pip is not installed, install pip using command - "conda install pip"
+ 
+
+    ~~~python
+        Pip install crewai  'crewai[tools]'
+    ~~~
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/crewai-setup/crewai-install-pip.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+
+10. One of the cool feature of crewai is that it gives you a boilerplate code using crewai command so that you don’t have to create a skeleton code. You can run the command -  `crewai create crew "ashish-sample-crewai"` and it will create a crewai project name `"ashish-sample-crewai"` and with all the basic skeleton code with it.
+ 
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/crewai-setup/crewai-new-prj-creation.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/crewai-setup/crewai-new-prj-creation-002.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>    
+</div>
+
+
+11. By default crewai uses OpenAI api. However in above crewai projection creation, I used the Deep seek LLM so I need to add environment files and give the my Deep Seek LLM api keys. Else it will try to connect to openAI llm and you will get authenticatoin error as you have not mentioned OpenAI API keys. <br> Congratulation, you have created crewai project successfully. 
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/crewai-setup/crewai-project-successful-creation.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+
+12. If you want to run this simply give command - `crewai run`  Crewai will do the build and then you can run .
+ 
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/crewai-setup/conda-crewai-run.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>    
+</div>
+
+13. I received the OpenAI api error as expected because I didn’t provide api keys. <br> However it shows crewai set-up is correct and working as desired. 
+ 
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/crewai-setup/crewai-run-final.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>    
+</div>
