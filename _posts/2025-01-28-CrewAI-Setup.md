@@ -10,31 +10,28 @@ featured: false
 In this article CrewAI Installation Using Anaconda.
 
 1.  Install anaconda from [Anaconda Download](https://www.anaconda.com/download).
-
 2.  Start powershell from anaconda folder ( similar to below)
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/crewai-setup/Start-Menu-Ananconda-Powershell.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    <div class="row mt-3">
+        <div class="col-sm mt-3 mt-md-0">
+            {% include figure.liquid loading="eager" path="assets/img/crewai-setup/Start-Menu-Ananconda-Powershell.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        </div>
     </div>
-</div>
+3.    We'll create a new conda environment for crewai. Not a necessary steps but for a safety of not impacting our existing ongoing conda envionment or python development work due to any dependencies packages or libraries  installation.
+4.Give following command to create new environment called "crewai-handson". In case you are looking for specific version of python you can mention same. 
+        ~~~python
+            conda create -n crewai-handson
+        ~~~
 
-3.  We'll create a new conda environment for crewai. Not a necessary steps but for a safety of not impacting our existing ongoing conda envionment or python development work due to any dependencies packages or libraries  installation.
-
-4.  Give following command to create new environment called "crewai-handson". In case you are looking for specific version of python you can mention same. 
-    ~~~python
-        conda create -n crewai-handson
-    ~~~
-
-    ~~~python
-        conda create -n crewai-handson   python=3.11.9 
-    ~~~
+        ~~~python
+            conda create -n crewai-handson   python=3.11.9 
+        ~~~
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/crewai-setup/conda-crewai-env.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
-5.  Now activate this new environment using command 
+5.Now activate this new environment using command 
 
     ~~~python
         conda activate crewai-handson
@@ -83,7 +80,7 @@ In this article CrewAI Installation Using Anaconda.
  
 
     ~~~python
-        Pip install crewai  'crewai[tools]'
+        pip install crewai  'crewai[tools]'
     ~~~
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
