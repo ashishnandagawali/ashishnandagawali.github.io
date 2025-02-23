@@ -41,6 +41,17 @@ ninja.data = [{
           window.location.href = "/blog/2025/Deepseek-Langchain-api/";
         
       },
+    },{id: "post-crewai-installation-using-anaconda",
+      
+        title: "CrewAI Installation Using Anaconda",
+      
+      description: "This blog post describes CrewAI Installation Using Anaconda",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/CrewAI-Setup/";
+        
+      },
     },{id: "news-a-simple-inline-announcement",
           title: 'A simple inline announcement.',
           description: "",
