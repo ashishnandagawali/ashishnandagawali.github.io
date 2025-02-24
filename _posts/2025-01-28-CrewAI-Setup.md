@@ -18,13 +18,13 @@ In this article CrewAI Installation Using Anaconda.
     </div>
 </div>
 
-3.  We'll create a new conda environment for crewai. Not a necessary steps but for a safety of not impacting our existing ongoing conda envionment or python development work due to any dependencies packages or libraries  installation.
+3.  We'll create a new conda environment for crewai. Not a necessary steps but for a safety net, not impacting our existing ongoing conda envionment or python development work due to any dependencies packages or libraries  installation.
 
 4.  Give following command to create new environment called "crewai-handson". In case you are looking for specific version of python you can mention same. 
     ~~~python
         conda create -n crewai-handson
     ~~~
-
+        OR
     ~~~python
         conda create -n crewai-handson   python=3.11.9 
     ~~~
@@ -45,7 +45,7 @@ In this article CrewAI Installation Using Anaconda.
     </div>
 </div>
 
-6.  I am using the cursor ide for development of the my crewai projects. Cursor ai ( build on VS code) have it own terminal where you can activate your conda environment are use the anaconda shell in separate window. Your choice of convenience.
+6.  I am using cursor ide for development of my crewai projects. Cursor ai ( build on VS code) have it own terminal where you can activate your conda environment or use the anaconda shell in separate command or terminal window. Your choice of convenience.
 
 7.  If your cursor or windows command is not able to recognise conda command then add conda location to your environment variable in path.
 <div class="row mt-3">
