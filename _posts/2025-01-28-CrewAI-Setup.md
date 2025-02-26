@@ -11,12 +11,12 @@ In this article CrewAI Installation Using Anaconda.
 
 > Install anaconda from [Anaconda Download](https://www.anaconda.com/download).
 
-2.  Start powershell from anaconda folder ( similar to below)
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/crewai-setup/Start-Menu-Ananconda-Powershell.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-</div>
+>  Start powershell from anaconda folder ( similar to below)
+> <div class="row mt-3">
+>    <div class="col-sm mt-3 mt-md-0">
+>        {% include figure.liquid loading="eager" path="assets/img/crewai-setup/Start-Menu-Ananconda-Powershell.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+>    </div>
+> </div>
 
 3.  We'll create a new conda environment for crewai. Not a necessary steps but for a safety net, not impacting our existing ongoing conda envionment or python development work due to any dependencies packages or libraries  installation.
 4.  Give following command to create new environment called "crewai-handson". In case you are looking for specific version of python you can mention same. 
