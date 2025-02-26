@@ -19,14 +19,9 @@ In this article CrewAI Installation Using Anaconda.
 </div>
 
 >   We'll create a new conda environment for crewai. Not a necessary steps but for a safety net, not impacting our existing ongoing conda envionment or python development work due to any dependencies packages or libraries  installation.
->  Give following command to create new environment called "crewai-handson". In case you are looking for specific version of python you can mention same. 
- ~~~python
-     conda create -n crewai-handson
- ~~~
- OR
- ~~~python
-     conda create -n crewai-handson   python=3.11.9 
- ~~~
+>  Give following command to create new environment called `crewai-handson`. So give command `conda create -n crewai-handson`
+> In case you are looking for specific version of python you can mention same  - `conda create -n crewai-handson   python=3.11.9`
+
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/crewai-setup/conda-crewai-env.png" class="img-fluid rounded z-depth-1" zoomable=true %}
@@ -34,11 +29,8 @@ In this article CrewAI Installation Using Anaconda.
 </div>
 
 
->  Now activate this new environment using command 
-
- ~~~python
-     conda activate crewai-handson
- ~~~
+>  Now activate this new environment using command - `conda activate crewai-handson`
+ 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/crewai-setup/conda-crewai-env-activate.png" class="img-fluid rounded z-depth-1" zoomable=true %}
@@ -54,13 +46,10 @@ In this article CrewAI Installation Using Anaconda.
     </div>
 </div>
 
->  Either in powershell/command prompt/"cursor terminal", execute command ( If not done sucessfully as Step#5) 
+> Either in powershell/command prompt/"cursor terminal", execute command `conda activate crewai-handson`
+> If not done sucessfully as Step#5
 
- ~~~python
-     conda activate crewai-handson
- ~~~
-
- > Cursor Terminal
+> Cursor Terminal
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/crewai-setup/conda-crewai-env-activate-cursor-term.png" class="img-fluid rounded z-depth-1" zoomable=true %}
@@ -80,19 +69,17 @@ In this article CrewAI Installation Using Anaconda.
         {% include figure.liquid loading="eager" path="assets/img/crewai-setup/conda-crewai-env-activate-anaconda-powershell.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
-
->  Now let's install packages required for crewai using pip ( if pip is not installed, install pip using command - "conda install pip"
  
- ~~~python
-     Pip install crewai  'crewai[tools]'
- ~~~
+> Now let's install packages required for crewai using pip - `pip install crewai  'crewai[tools]'`
+> if pip is not installed, install pip using command - `conda install pip`
+
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/crewai-setup/crewai-install-pip.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
->  One of the cool feature of crewai is that it gives you a boilerplate code using crewai command so that you don’t have to create a skeleton code. You can run the command -  crewai create crew "ashish-sample-crewai" and it will create a crewai project name `"ashish-sample-crewai"` and with all the basic skeleton code with it.
+>  One of the cool feature of crewai is that it gives you a boilerplate code using crewai command so that you don’t have to create a skeleton code. You can run the command -  `crewai create crew "ashish-sample-crewai"` and it will create a crewai project name `"ashish-sample-crewai"` and with all the basic skeleton code with it.
  
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
