@@ -18,8 +18,8 @@ In this article CrewAI Installation Using Anaconda.
    </div>
 </div>
 
->   We'll create a new conda environment for crewai. Not a necessary steps but for a safety net, not impacting our existing ongoing conda envionment or python development work due to any dependencies packages or libraries  installation.
->  Give following command to create new environment called `crewai-handson`. So give command `conda create -n crewai-handson`
+> We'll create a new conda environment for crewai. Not a necessary steps but for a safety net, not impacting our existing ongoing conda envionment or python development work due to any dependencies packages or libraries  installation.
+> Give command `conda create -n crewai-handson` to create new environment called `crewai-handson` <br>
 > In case you are looking for specific version of python you can mention same  - `conda create -n crewai-handson   python=3.11.9`
 
 <div class="row mt-3">
@@ -37,7 +37,7 @@ In this article CrewAI Installation Using Anaconda.
     </div>
 </div>
 
->  I am using cursor ide for development of my crewai projects. Cursor ai ( build on VS code) have it own terminal where you can activate your conda environment or use the anaconda shell in separate command or terminal window. Your choice of convenience.
+>  I am using cursor ide for development of my crewai projects. Cursor-AI ( build on VS code) have it own terminal where you can activate your conda environment or use the anaconda shell in separate command or terminal window. Your choice of convenience.
 
 >  If your cursor or windows command is not able to recognise conda command then add conda location to your environment variable in path.
 <div class="row mt-3">
@@ -46,7 +46,7 @@ In this article CrewAI Installation Using Anaconda.
     </div>
 </div>
 
-> Either in powershell/command prompt/"cursor terminal", execute command `conda activate crewai-handson`
+> Either in powershell/command prompt/cursor terminal, execute command `conda activate crewai-handson` <br>
 > If not done sucessfully as Step#5
 
 > Cursor Terminal
@@ -90,7 +90,7 @@ In this article CrewAI Installation Using Anaconda.
     </div>    
 </div>
 
->  By default crewai uses OpenAI api. However in above crewai projection creation, I used the Deep seek LLM so I need to add environment files and give the my Deep Seek LLM api keys. Else it will try to connect to openAI llm and you will get authenticatoin error as you have not mentioned OpenAI API keys. <br><br> Congratulation, you have created crewai project successfully. 
+>  By default crewai uses OpenAI api. However in above crewai projection creation, I used the Deepseek LLM so I need to add environment files and give the my DeepSeek LLM api keys. Else it will try to connect to openAI LLM and you will get authentication error as you have not mentioned OpenAI API keys. <br><br> Congratulation, you have created crewai project successfully. 
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
