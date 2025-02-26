@@ -18,9 +18,7 @@ In this article CrewAI Installation Using Anaconda.
    </div>
 </div>
 
-> We'll create a new conda environment for crewai. Not a necessary steps but for a safety net, not impacting our existing ongoing conda envionment or python development work due to any dependencies packages or libraries  installation.
-> Give command `conda create -n crewai-handson` to create new environment called `crewai-handson` <br>
-> In case you are looking for specific version of python you can mention same  - `conda create -n crewai-handson   python=3.11.9`
+> We'll create a new conda environment for crewai. Not a necessary steps but for a safety net, not impacting our existing ongoing conda envionment or python development work due to any dependencies packages or libraries  installation. <br> Give command `conda create -n crewai-handson` to create new environment called `crewai-handson` <br> In case you are looking for specific version of python you can mention same  - `conda create -n crewai-handson   python=3.11.9`
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -46,8 +44,7 @@ In this article CrewAI Installation Using Anaconda.
     </div>
 </div>
 
-> Either in powershell/command prompt/cursor terminal, execute command `conda activate crewai-handson` <br>
-> If not done sucessfully as Step#5
+> Either in powershell/command prompt/cursor terminal, execute command `conda activate crewai-handson` <br> If not done sucessfully as Step#5
 
 > Cursor Terminal
 <div class="row mt-3">
@@ -79,7 +76,7 @@ In this article CrewAI Installation Using Anaconda.
     </div>
 </div>
 
->  One of the cool feature of crewai is that it gives you a boilerplate code using crewai command so that you don’t have to create a skeleton code. You can run the command -  `crewai create crew "ashish-sample-crewai"` and it will create a crewai project name `"ashish-sample-crewai"` and with all the basic skeleton code with it.
+>  One of the cool feature of crewai is that it gives you a boilerplate code using crewai command so that you don’t have to create a skeleton code. <br>You can run the command -  `crewai create crew "ashish-sample-crewai"` and it will create a crewai project name `ashish-sample-crewai` and with all the basic skeleton code or boilerplat code withhin it.
  
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -98,7 +95,7 @@ In this article CrewAI Installation Using Anaconda.
     </div>
 </div>
 
->  If you want to run this simply give command - `crewai run`  Crewai will do the build and then you can run .
+>  If you want to run this simply give command - `crewai run`  Crewai will do the build and your crew will run
  
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
