@@ -20,13 +20,13 @@ In this article CrewAI Installation Using Anaconda.
 
 >   We'll create a new conda environment for crewai. Not a necessary steps but for a safety net, not impacting our existing ongoing conda envionment or python development work due to any dependencies packages or libraries  installation.
 >  Give following command to create new environment called "crewai-handson". In case you are looking for specific version of python you can mention same. 
-    ~~~python
-        conda create -n crewai-handson
-    ~~~
-    OR
-    ~~~python
-        conda create -n crewai-handson   python=3.11.9 
-    ~~~
+ ~~~python
+     conda create -n crewai-handson
+ ~~~
+ OR
+ ~~~python
+     conda create -n crewai-handson   python=3.11.9 
+ ~~~
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/crewai-setup/conda-crewai-env.png" class="img-fluid rounded z-depth-1" zoomable=true %}
@@ -36,9 +36,9 @@ In this article CrewAI Installation Using Anaconda.
 
 >  Now activate this new environment using command 
 
-    ~~~python
-        conda activate crewai-handson
-    ~~~
+ ~~~python
+     conda activate crewai-handson
+ ~~~
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/crewai-setup/conda-crewai-env-activate.png" class="img-fluid rounded z-depth-1" zoomable=true %}
@@ -56,23 +56,25 @@ In this article CrewAI Installation Using Anaconda.
 
 >  Either in powershell/command prompt/"cursor terminal", execute command ( If not done sucessfully as Step#5) 
 
-    ~~~python
-        conda activate crewai-handson
-    ~~~
+ ~~~python
+     conda activate crewai-handson
+ ~~~
 
-    Cursor Terminal
+ > Cursor Terminal
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/crewai-setup/conda-crewai-env-activate-cursor-term.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>  
-    Windows Powershell Command Prompt
+
+> Windows Powershell Command Prompt
+
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/crewai-setup/conda-crewai-env-activate-powershell.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
-    Anaconda Powershell Command Prompt
+> Anaconda Powershell Command Prompt
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/crewai-setup/conda-crewai-env-activate-anaconda-powershell.png" class="img-fluid rounded z-depth-1" zoomable=true %}
@@ -81,10 +83,9 @@ In this article CrewAI Installation Using Anaconda.
 
 >  Now let's install packages required for crewai using pip ( if pip is not installed, install pip using command - "conda install pip"
  
-
-    ~~~python
-        Pip install crewai  'crewai[tools]'
-    ~~~
+ ~~~python
+     Pip install crewai  'crewai[tools]'
+ ~~~
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/crewai-setup/crewai-install-pip.png" class="img-fluid rounded z-depth-1" zoomable=true %}
