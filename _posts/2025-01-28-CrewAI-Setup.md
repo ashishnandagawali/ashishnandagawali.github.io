@@ -9,7 +9,7 @@ featured: false
 ---
 In this article CrewAI Installation Using Anaconda.
 
-1.  Install anaconda from [Anaconda Download](https://www.anaconda.com/download).
+> Install anaconda from [Anaconda Download](https://www.anaconda.com/download).
 
 2.  Start powershell from anaconda folder ( similar to below)
 <div class="row mt-3">
