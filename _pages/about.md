@@ -9,7 +9,6 @@ profile:
   image: prof_pic.jpg
   image_circular: true # crops the image to make it circular
   more_info: >
-    <p>nandagawali.ashish@outlook.com</p>
     <p>Pune, India </p>
 
 news: false # includes a list of news items
