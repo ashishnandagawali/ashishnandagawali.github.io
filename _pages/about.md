@@ -2,7 +2,6 @@
 layout: about
 title: About me
 permalink: /
-subtitle: <a href='#'>Affiliations</a>
 
 profile:
   align: right
