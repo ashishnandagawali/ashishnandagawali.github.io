@@ -2,13 +2,14 @@
 layout: about
 title: About me
 permalink: /
-subtitle: <a href='#'>About Me </a>
+subtitle: <a href='#'>Affiliations</a>
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: true # crops the image to make it circular
   more_info: >
+    <p>nandagawali.ashish@outlook.com</p>
     <p>Pune, India </p>
 
 news: false # includes a list of news items
@@ -22,7 +23,6 @@ I have played various roles including sales & solution lead, program manager, de
 Lately I developed very keen interest in AI (or you can say bitten by AI bug) and have been actively learning with various medium including AWS, Microsoft and Google certifications, IIT-Kharagpur certification course, AI summits hosted by nvidia, Salesforce. 
 
 These learning along with reading from Gartner,Forrester,IDC,B&C etc.,  industry analyst published papers from Deloitte, EY, KPMG, PwC, IBM computing, Accenture, TCS, Infosys gave me insights not only on technical aspects of AI (& continuous advancement in field of AI) but also real time business relevant implementation of AI, Gen-AI/ LLM, Machine Learning and off course, and Data science. Being part of Pune AI Chapter within organization, I get opportunities to help in designing AI/Gen-AI Solutions & implemenations, helping creating PoC/MVPs, create awareness on AI & latest trends in AI/Gen-AI.
-
 
 
 
